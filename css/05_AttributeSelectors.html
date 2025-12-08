@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[name]{
+            background-color: yellow;
+        }
+        div[name = "box1"]{
+            background-color: red;
+        }
+        div[name ~= "wrapper"]{
+            background-color: blue;
+        }
+        div[name |= "main"]{
+            background-color: aqua;
+        }
+        div[name ^= "head"]{
+            background-color: orange;
+        }
+        div[name $= "age"]{
+            background-color: violet;
+        }
+        div[name *= "vli"]{
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learn Attribute Selectors</h1>
+    <div name="box1">Lorem ipsum dolor sit amet.</div>
+    <div name="box2">Lorem ipsum dolor sit amet.</div>
+    <div name="box3">Lorem ipsum dolor sit amet.</div>
+    <div name="content wrapper">Lorem ipsum dolor sit amet.</div>
+    <div name="main-box">Lorem ipsum dolor sit amet.</div>
+    <div name="headerbox">Lorem ipsum dolor sit amet.</div>
+    <div name="image">Lorem ipsum dolor sit amet.</div>
+    <div name="navlinks">Lorem ipsum dolor sit amet.</div>
+
+
+</body>
+</html>

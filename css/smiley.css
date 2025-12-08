@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.face {
+  height: 600px;
+  width: 600px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+.eyes-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.eye {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  margin-top: 100px;
+  border-radius: 50%;
+  position: relative;
+  animation-name: eyeRotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.eye-ball {
+  height: 80px;
+  width: 80px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 34px;
+}
+.mouth {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  margin: 50px auto 0 auto;
+  border-radius: 0 0 50% 50%;
+  animation-name: mouthOpen;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes eyeRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes mouthOpen {
+  0% {
+    height: 200px;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 200px;
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* p::first-line {
+        color: red;
+      }
+      p::first-letter {
+        color: blue;
+        font-size: 70px;
+      } */
+      h2::before{
+        content: "🩷";
+        font-size: 100px;
+      }
+      h2::after{
+        content: " World 🚀";
+        font-size: 80px;
+        font-family: fantasy;
+      }
+      /* p::selection{
+        background-color: yellow;
+        color: black;
+      } */
+
+      ol>li::marker{
+        color: red;
+      }
+      ul>li::marker{
+        color: green;
+      }
+
+      .defination{
+        display: none;
+      }
+      #task1>li>span{
+        padding-bottom: 50px;
+      }
+      #task1>li>span:hover+p{
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Learn Pseudo Element Selectors ::</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nesciunt
+      dolores illum eius fugiat quidem alias delectus culpa natus, neque
+      mollitia vitae blanditiis nemo quos rerum cupiditate necessitatibus
+      architecto incidunt non deserunt, in modi placeat distinctio? Minus illum
+      consectetur, eligendi, totam eum assumenda dolorum autem facilis excepturi
+      eius eveniet magnam.
+    </p>
+
+    <h2>Hello</h2>
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+
+    <hr>
+
+    <h3>Task</h3>
+
+    <ol id="task1">
+        <li>
+            <span>HTML</span>
+            <p class="defination">It is a markup language used to create structure of webpage</p>
+        </li>
+        <li>
+            <span>CSS</span>
+            <p class="defination">It is used to style html webpage</p>
+        </li>
+        <li>
+            <span>JS</span>
+            <p class="defination">It is a scripting language used to add fuctionality to webpage</p>
+        </li>
+    </ol>
+
+
+  </body>
+</html>

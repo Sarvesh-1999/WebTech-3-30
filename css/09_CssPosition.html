@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box1{
+            background-color: yellow;
+            position: static;
+            top: 100px;
+        }
+        .box2{
+            background-color: aqua;
+            position: sticky;    
+            top: 0;            
+        }
+        .box3{
+            background-color: lightskyblue;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+        .box4{
+            background-color: pink;
+            position: relative;
+            left: 300px;
+            top: 50px;
+        }
+        .box5{
+            background-color: greenyellow;
+            position: absolute;
+            left: 50px;
+            top: 0px;
+        }
+
+            section{
+                height: 50vh;
+                width: 50vw;
+                background-color: black;
+                position: relative;
+            }
+            .box6{
+                background-color: violet;
+                position: absolute;
+                right: 0;
+            }
+            .box7{
+                background-color: red;
+                position: relative;
+                z-index: 6;
+            }
+            .box8{
+                background-color: blue;
+                position: relative;
+                left: 50px;
+                top: -150px;
+                z-index: 5;
+            }
+            .box9{
+                background-color: green;
+                position: relative;
+                left: 100px;
+                top: -300px;
+                z-index: 100;
+            }
+
+            button{
+                padding: 5px 20px;
+                position: relative;
+                left: 200px;
+                top: 100px;
+            }
+            button>ul{
+                position: absolute;
+                border: 1px solid black;
+                top: 28px;
+                list-style: none;
+                display: none;
+            }
+            button:hover>ul{
+                display: block;
+            }
+
+    </style>
+</head>
+<body>
+
+    <!-- <div class="box1">
+        STATIC POSITION
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam in modi repellendus hic, quisquam nemo magnam fuga, ullam a laborum quaerat officiis est ipsa? Accusantium magnam eius fugiat neque libero qui nulla omnis dicta distinctio in sed reiciendis illo, consequatur debitis placeat iste dolorem molestias error ipsam aut quidem deserunt. Eum, libero tempore laborum doloribus ut laboriosam architecto culpa error repellendus rem quis accusamus optio sequi maiores molestias corporis ducimus dignissimos qui ullam asperiores illo inventore! Modi aspernatur, facilis aperiam id sequi nostrum veniam, omnis eaque dolores explicabo excepturi quae dignissimos accusantium. Excepturi officia temporibus iste rem dolor quod?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum molestias maxime nulla expedita vitae, necessitatibus commodi quis quisquam possimus temporibus tempore in debitis nesciunt, amet porro neque accusantium consequuntur soluta unde dolore! Expedita perferendis minus aspernatur possimus voluptate at pariatur mollitia odio in et nulla quibusdam error velit, assumenda voluptas dicta quod facilis, sequi suscipit minima eum doloribus est. Quam dolorem eum esse cum error dolor illum quia, incidunt eaque laboriosam veniam est voluptatum consequatur iusto minima beatae corrupti. Necessitatibus, sunt excepturi iure quia omnis soluta, doloremque perferendis molestiae maiores, aliquam minus illo quisquam. Placeat dignissimos reiciendis, voluptatum cupiditate nihil eum molestias consectetur natus iure, quas neque. Voluptatum harum nobis ipsum provident nulla, sunt saepe mollitia natus numquam quis modi corporis fugit vero voluptas rerum magni tempora placeat delectus incidunt est alias cumque explicabo repellat consectetur? Ad soluta minima, reiciendis eaque corporis maiores cupiditate explicabo sit aliquid voluptatem vel illum. Eveniet obcaecati, non assumenda maiores asperiores eligendi corrupti quibusdam? Placeat harum expedita enim iste iusto reiciendis voluptatem perspiciatis esse provident explicabo vitae quisquam cum, error distinctio dolorum? Excepturi autem dolorem reprehenderit obcaecati qui deserunt, quo, voluptatum similique blanditiis impedit voluptates consectetur, dolorum quod! Nulla tempore vitae ex voluptatem in? Accusantium rerum placeat perferendis maxime, explicabo nobis eos error labore ullam laudantium. Perferendis, iste enim illum omnis minima accusantium nobis, dignissimos nisi fuga, sequi suscipit assumenda natus explicabo dolore magni possimus harum adipisci recusandae. Delectus quisquam magnam perspiciatis vel quia quaerat error quod sint magni dignissimos praesentium at dolorum, libero quos laborum mollitia a et aspernatur minima iste illo quas? Alias dolorum optio illo voluptate eveniet deserunt quasi, fuga assumenda ab, magni mollitia voluptatum aut quae illum. Optio laborum earum recusandae et. Error voluptates nobis mollitia excepturi, assumenda ipsum adipisci quae repudiandae eligendi atque sequi similique repellat quis rem ex. Est nulla debitis eaque, velit et neque ipsum beatae doloremque? Assumenda sed at aliquam quidem laborum facere ex ratione ipsam, ullam dolorem facilis laboriosam doloribus modi atque recusandae eveniet odio perferendis laudantium iusto distinctio culpa nihil itaque! Fuga quos dolorum, maiores voluptatem ea hic corrupti modi, facere inventore quisquam rem, velit ipsam mollitia saepe! Quam expedita quis neque enim aut eum quasi nostrum rerum nihil facilis sequi laboriosam eos odio deleniti a, inventore minima iusto sit cumque tempore optio minus non eius unde. Voluptatum, iusto magnam? Quasi tenetur nobis amet cupiditate maiores in alias quia? Officia, nulla? Minima, cumque nisi fugiat facilis, sunt ipsum et qui quod in ipsam iure? Iusto, praesentium similique deserunt nihil provident incidunt odio eligendi ex repudiandae impedit? Incidunt tempora fuga quos est velit dolorum, expedita sint corporis ipsum nostrum, praesentium aut blanditiis veniam odit sapiente atque aperiam vitae neque consectetur quas. Illum quo incidunt laborum veniam temporibus nulla fugit dolorum voluptate labore excepturi. Aperiam porro nostrum libero sequi sit eum, magnam unde possimus perferendis quasi accusantium suscipit quidem repudiandae illum, voluptatum fugiat eius, dignissimos nulla tenetur eaque? Reprehenderit voluptates temporibus minima quaerat officiis quae hic nostrum pariatur impedit, explicabo autem magnam fugit qui expedita ipsa facere.
+    </p>
+
+     <div class="box2">
+        STICKY POSITION
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam in modi repellendus hic, quisquam nemo magnam fuga, ullam a laborum quaerat officiis est ipsa? Accusantium magnam eius fugiat neque libero qui nulla omnis dicta distinctio in sed reiciendis illo, consequatur debitis placeat iste dolorem molestias error ipsam aut quidem deserunt. Eum, libero tempore laborum doloribus ut laboriosam architecto culpa error repellendus rem quis accusamus optio sequi maiores molestias corporis ducimus dignissimos qui ullam asperiores illo inventore! Modi aspernatur, facilis aperiam id sequi nostrum veniam, omnis eaque dolores explicabo excepturi quae dignissimos accusantium. Excepturi officia temporibus iste rem dolor quod?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum molestias maxime nulla expedita vitae, necessitatibus commodi quis quisquam possimus temporibus tempore in debitis nesciunt, amet porro neque accusantium consequuntur soluta unde dolore! Expedita perferendis minus aspernatur possimus voluptate at pariatur mollitia odio in et nulla quibusdam error velit, assumenda voluptas dicta quod facilis, sequi suscipit minima eum doloribus est. Quam dolorem eum esse cum error dolor illum quia, incidunt eaque laboriosam veniam est voluptatum consequatur iusto minima beatae corrupti. Necessitatibus, sunt excepturi iure quia omnis soluta, doloremque perferendis molestiae maiores, aliquam minus illo quisquam. Placeat dignissimos reiciendis, voluptatum cupiditate nihil eum molestias consectetur natus iure, quas neque. Voluptatum harum nobis ipsum provident nulla, sunt saepe mollitia natus numquam quis modi corporis fugit vero voluptas rerum magni tempora placeat delectus incidunt est alias cumque explicabo repellat consectetur? Ad soluta minima, reiciendis eaque corporis maiores cupiditate explicabo sit aliquid voluptatem vel illum. Eveniet obcaecati, non assumenda maiores asperiores eligendi corrupti quibusdam? Placeat harum expedita enim iste iusto reiciendis voluptatem perspiciatis esse provident explicabo vitae quisquam cum, error distinctio dolorum? Excepturi autem dolorem reprehenderit obcaecati qui deserunt, quo, voluptatum similique blanditiis impedit voluptates consectetur, dolorum quod! Nulla tempore vitae ex voluptatem in? Accusantium rerum placeat perferendis maxime, explicabo nobis eos error labore ullam laudantium. Perferendis, iste enim illum omnis minima accusantium nobis, dignissimos nisi fuga, sequi suscipit assumenda natus explicabo dolore magni possimus harum adipisci recusandae. Delectus quisquam magnam perspiciatis vel quia quaerat error quod sint magni dignissimos praesentium at dolorum, libero quos laborum mollitia a et aspernatur minima iste illo quas? Alias dolorum optio illo voluptate eveniet deserunt quasi, fuga assumenda ab, magni mollitia voluptatum aut quae illum. Optio laborum earum recusandae et. Error voluptates nobis mollitia excepturi, assumenda ipsum adipisci quae repudiandae eligendi atque sequi similique repellat quis rem ex. Est nulla debitis eaque, velit et neque ipsum beatae doloremque? Assumenda sed at aliquam quidem laborum facere ex ratione ipsam, ullam dolorem facilis laboriosam doloribus modi atque recusandae eveniet odio perferendis laudantium iusto distinctio culpa nihil itaque! Fuga quos dolorum, maiores voluptatem ea hic corrupti modi, facere inventore quisquam rem, velit ipsam mollitia saepe! Quam expedita quis neque enim aut eum quasi nostrum rerum nihil facilis sequi laboriosam eos odio deleniti a, inventore minima iusto sit cumque tempore optio minus non eius unde. Voluptatum, iusto magnam? Quasi tenetur nobis amet cupiditate maiores in alias quia? Officia, nulla? Minima, cumque nisi fugiat facilis, sunt ipsum et qui quod in ipsam iure? Iusto, praesentium similique deserunt nihil provident incidunt odio eligendi ex repudiandae impedit? Incidunt tempora fuga quos est velit dolorum, expedita sint corporis ipsum nostrum, praesentium aut blanditiis veniam odit sapiente atque aperiam vitae neque consectetur quas. Illum quo incidunt laborum veniam temporibus nulla fugit dolorum voluptate labore excepturi. Aperiam porro nostrum libero sequi sit eum, magnam unde possimus perferendis quasi accusantium suscipit quidem repudiandae illum, voluptatum fugiat eius, dignissimos nulla tenetur eaque? Reprehenderit voluptates temporibus minima quaerat officiis quae hic nostrum pariatur impedit, explicabo autem magnam fugit qui expedita ipsa facere.
+    </p>
+
+    <div class="box3">
+        FIXED POSITION
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam in modi repellendus hic, quisquam nemo magnam fuga, ullam a laborum quaerat officiis est ipsa? Accusantium magnam eius fugiat neque libero qui nulla omnis dicta distinctio in sed reiciendis illo, consequatur debitis placeat iste dolorem molestias error ipsam aut quidem deserunt. Eum, libero tempore laborum doloribus ut laboriosam architecto culpa error repellendus rem quis accusamus optio sequi maiores molestias corporis ducimus dignissimos qui ullam asperiores illo inventore! Modi aspernatur, facilis aperiam id sequi nostrum veniam, omnis eaque dolores explicabo excepturi quae dignissimos accusantium. Excepturi officia temporibus iste rem dolor quod?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum molestias maxime nulla expedita vitae, necessitatibus commodi quis quisquam possimus temporibus tempore in debitis nesciunt, amet porro neque accusantium consequuntur soluta unde dolore! Expedita perferendis minus aspernatur possimus voluptate at pariatur mollitia odio in et nulla quibusdam error velit, assumenda voluptas dicta quod facilis, sequi suscipit minima eum doloribus est. Quam dolorem eum esse cum error dolor illum quia, incidunt eaque laboriosam veniam est voluptatum consequatur iusto minima beatae corrupti. Necessitatibus, sunt excepturi iure quia omnis soluta, doloremque perferendis molestiae maiores, aliquam minus illo quisquam. Placeat dignissimos reiciendis, voluptatum cupiditate nihil eum molestias consectetur natus iure, quas neque. Voluptatum harum nobis ipsum provident nulla, sunt saepe mollitia natus numquam quis modi corporis fugit vero voluptas rerum magni tempora placeat delectus incidunt est alias cumque explicabo repellat consectetur? Ad soluta minima, reiciendis eaque corporis maiores cupiditate explicabo sit aliquid voluptatem vel illum. Eveniet obcaecati, non assumenda maiores asperiores eligendi corrupti quibusdam? Placeat harum expedita enim iste iusto reiciendis voluptatem perspiciatis esse provident explicabo vitae quisquam cum, error distinctio dolorum? Excepturi autem dolorem reprehenderit obcaecati qui deserunt, quo, voluptatum similique blanditiis impedit voluptates consectetur, dolorum quod! Nulla tempore vitae ex voluptatem in? Accusantium rerum placeat perferendis maxime, explicabo nobis eos error labore ullam laudantium. Perferendis, iste enim illum omnis minima accusantium nobis, dignissimos nisi fuga, sequi suscipit assumenda natus explicabo dolore magni possimus harum adipisci recusandae. Delectus quisquam magnam perspiciatis vel quia quaerat error quod sint magni dignissimos praesentium at dolorum, libero quos laborum mollitia a et aspernatur minima iste illo quas? Alias dolorum optio illo voluptate eveniet deserunt quasi, fuga assumenda ab, magni mollitia voluptatum aut quae illum. Optio laborum earum recusandae et. Error voluptates nobis mollitia excepturi, assumenda ipsum adipisci quae repudiandae eligendi atque sequi similique repellat quis rem ex. Est nulla debitis eaque, velit et neque ipsum beatae doloremque? Assumenda sed at aliquam quidem laborum facere ex ratione ipsam, ullam dolorem facilis laboriosam doloribus modi atque recusandae eveniet odio perferendis laudantium iusto distinctio culpa nihil itaque! Fuga quos dolorum, maiores voluptatem ea hic corrupti modi, facere inventore quisquam rem, velit ipsam mollitia saepe! Quam expedita quis neque enim aut eum quasi nostrum rerum nihil facilis sequi laboriosam eos odio deleniti a, inventore minima iusto sit cumque tempore optio minus non eius unde. Voluptatum, iusto magnam? Quasi tenetur nobis amet cupiditate maiores in alias quia? Officia, nulla? Minima, cumque nisi fugiat facilis, sunt ipsum et qui quod in ipsam iure? Iusto, praesentium similique deserunt nihil provident incidunt odio eligendi ex repudiandae impedit? Incidunt tempora fuga quos est velit dolorum, expedita sint corporis ipsum nostrum, praesentium aut blanditiis veniam odit sapiente atque aperiam vitae neque consectetur quas. Illum quo incidunt laborum veniam temporibus nulla fugit dolorum voluptate labore excepturi. Aperiam porro nostrum libero sequi sit eum, magnam unde possimus perferendis quasi accusantium suscipit quidem repudiandae illum, voluptatum fugiat eius, dignissimos nulla tenetur eaque? Reprehenderit voluptates temporibus minima quaerat officiis quae hic nostrum pariatur impedit, explicabo autem magnam fugit qui expedita ipsa facere.
+    </p>
+
+    <div class="box4">
+        RELATIVE POSITION
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam in modi repellendus hic, quisquam nemo magnam fuga, ullam a laborum quaerat officiis est ipsa? Accusantium magnam eius fugiat neque libero qui nulla omnis dicta distinctio in sed reiciendis illo, consequatur debitis placeat iste dolorem molestias error ipsam aut quidem deserunt. Eum, libero tempore laborum doloribus ut laboriosam architecto culpa error repellendus rem quis accusamus optio sequi maiores molestias corporis ducimus dignissimos qui ullam asperiores illo inventore! Modi aspernatur, facilis aperiam id sequi nostrum veniam, omnis eaque dolores explicabo excepturi quae dignissimos accusantium. Excepturi officia temporibus iste rem dolor quod?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum molestias maxime nulla expedita vitae, necessitatibus commodi quis quisquam possimus temporibus tempore in debitis nesciunt, amet porro neque accusantium consequuntur soluta unde dolore! Expedita perferendis minus aspernatur possimus voluptate at pariatur mollitia odio in et nulla quibusdam error velit, assumenda voluptas dicta quod facilis, sequi suscipit minima eum doloribus est. Quam dolorem eum esse cum error dolor illum quia, incidunt eaque laboriosam veniam est voluptatum consequatur iusto minima beatae corrupti. Necessitatibus, sunt excepturi iure quia omnis soluta, doloremque perferendis molestiae maiores, aliquam minus illo quisquam. Placeat dignissimos reiciendis, voluptatum cupiditate nihil eum molestias consectetur natus iure, quas neque. Voluptatum harum nobis ipsum provident nulla, sunt saepe mollitia natus numquam quis modi corporis fugit vero voluptas rerum magni tempora placeat delectus incidunt est alias cumque explicabo repellat consectetur? Ad soluta minima, reiciendis eaque corporis maiores cupiditate explicabo sit aliquid voluptatem vel illum. Eveniet obcaecati, non assumenda maiores asperiores eligendi corrupti quibusdam? Placeat harum expedita enim iste iusto reiciendis voluptatem perspiciatis esse provident explicabo vitae quisquam cum, error distinctio dolorum? Excepturi autem dolorem reprehenderit obcaecati qui deserunt, quo, voluptatum similique blanditiis impedit voluptates consectetur, dolorum quod! Nulla tempore vitae ex voluptatem in? Accusantium rerum placeat perferendis maxime, explicabo nobis eos error labore ullam laudantium. Perferendis, iste enim illum omnis minima accusantium nobis, dignissimos nisi fuga, sequi suscipit assumenda natus explicabo dolore magni possimus harum adipisci recusandae. Delectus quisquam magnam perspiciatis vel quia quaerat error quod sint magni dignissimos praesentium at dolorum, libero quos laborum mollitia a et aspernatur minima iste illo quas? Alias dolorum optio illo voluptate eveniet deserunt quasi, fuga assumenda ab, magni mollitia voluptatum aut quae illum. Optio laborum earum recusandae et. Error voluptates nobis mollitia excepturi, assumenda ipsum adipisci quae repudiandae eligendi atque sequi similique repellat quis rem ex. Est nulla debitis eaque, velit et neque ipsum beatae doloremque? Assumenda sed at aliquam quidem laborum facere ex ratione ipsam, ullam dolorem facilis laboriosam doloribus modi atque recusandae eveniet odio perferendis laudantium iusto distinctio culpa nihil itaque! Fuga quos dolorum, maiores voluptatem ea hic corrupti modi, facere inventore quisquam rem, velit ipsam mollitia saepe! Quam expedita quis neque enim aut eum quasi nostrum rerum nihil facilis sequi laboriosam eos odio deleniti a, inventore minima iusto sit cumque tempore optio minus non eius unde. Voluptatum, iusto magnam? Quasi tenetur nobis amet cupiditate maiores in alias quia? Officia, nulla? Minima, cumque nisi fugiat facilis, sunt ipsum et qui quod in ipsam iure? Iusto, praesentium similique deserunt nihil provident incidunt odio eligendi ex repudiandae impedit? Incidunt tempora fuga quos est velit dolorum, expedita sint corporis ipsum nostrum, praesentium aut blanditiis veniam odit sapiente atque aperiam vitae neque consectetur quas. Illum quo incidunt laborum veniam temporibus nulla fugit dolorum voluptate labore excepturi. Aperiam porro nostrum libero sequi sit eum, magnam unde possimus perferendis quasi accusantium suscipit quidem repudiandae illum, voluptatum fugiat eius, dignissimos nulla tenetur eaque? Reprehenderit voluptates temporibus minima quaerat officiis quae hic nostrum pariatur impedit, explicabo autem magnam fugit qui expedita ipsa facere.
+    </p>
+
+     <div class="box5">
+        ABSOLUTE POSITION
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam in modi repellendus hic, quisquam nemo magnam fuga, ullam a laborum quaerat officiis est ipsa? Accusantium magnam eius fugiat neque libero qui nulla omnis dicta distinctio in sed reiciendis illo, consequatur debitis placeat iste dolorem molestias error ipsam aut quidem deserunt. Eum, libero tempore laborum doloribus ut laboriosam architecto culpa error repellendus rem quis accusamus optio sequi maiores molestias corporis ducimus dignissimos qui ullam asperiores illo inventore! Modi aspernatur, facilis aperiam id sequi nostrum veniam, omnis eaque dolores explicabo excepturi quae dignissimos accusantium. Excepturi officia temporibus iste rem dolor quod?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum molestias maxime nulla expedita vitae, necessitatibus commodi quis quisquam possimus temporibus tempore in debitis nesciunt, amet porro neque accusantium consequuntur soluta unde dolore! Expedita perferendis minus aspernatur possimus voluptate at pariatur mollitia odio in et nulla quibusdam error velit, assumenda voluptas dicta quod facilis, sequi suscipit minima eum doloribus est. Quam dolorem eum esse cum error dolor illum quia, incidunt eaque laboriosam veniam est voluptatum consequatur iusto minima beatae corrupti. Necessitatibus, sunt excepturi iure quia omnis soluta, doloremque perferendis molestiae maiores, aliquam minus illo quisquam. Placeat dignissimos reiciendis, voluptatum cupiditate nihil eum molestias consectetur natus iure, quas neque. Voluptatum harum nobis ipsum provident nulla, sunt saepe mollitia natus numquam quis modi corporis fugit vero voluptas rerum magni tempora placeat delectus incidunt est alias cumque explicabo repellat consectetur? Ad soluta minima, reiciendis eaque corporis maiores cupiditate explicabo sit aliquid voluptatem vel illum. Eveniet obcaecati, non assumenda maiores asperiores eligendi corrupti quibusdam? Placeat harum expedita enim iste iusto reiciendis voluptatem perspiciatis esse provident explicabo vitae quisquam cum, error distinctio dolorum? Excepturi autem dolorem reprehenderit obcaecati qui deserunt, quo, voluptatum similique blanditiis impedit voluptates consectetur, dolorum quod! Nulla tempore vitae ex voluptatem in? Accusantium rerum placeat perferendis maxime, explicabo nobis eos error labore ullam laudantium. Perferendis, iste enim illum omnis minima accusantium nobis, dignissimos nisi fuga, sequi suscipit assumenda natus explicabo dolore magni possimus harum adipisci recusandae. Delectus quisquam magnam perspiciatis vel quia quaerat error quod sint magni dignissimos praesentium at dolorum, libero quos laborum mollitia a et aspernatur minima iste illo quas? Alias dolorum optio illo voluptate eveniet deserunt quasi, fuga assumenda ab, magni mollitia voluptatum aut quae illum. Optio laborum earum recusandae et. Error voluptates nobis mollitia excepturi, assumenda ipsum adipisci quae repudiandae eligendi atque sequi similique repellat quis rem ex. Est nulla debitis eaque, velit et neque ipsum beatae doloremque? Assumenda sed at aliquam quidem laborum facere ex ratione ipsam, ullam dolorem facilis laboriosam doloribus modi atque recusandae eveniet odio perferendis laudantium iusto distinctio culpa nihil itaque! Fuga quos dolorum, maiores voluptatem ea hic corrupti modi, facere inventore quisquam rem, velit ipsam mollitia saepe! Quam expedita quis neque enim aut eum quasi nostrum rerum nihil facilis sequi laboriosam eos odio deleniti a, inventore minima iusto sit cumque tempore optio minus non eius unde. Voluptatum, iusto magnam? Quasi tenetur nobis amet cupiditate maiores in alias quia? Officia, nulla? Minima, cumque nisi fugiat facilis, sunt ipsum et qui quod in ipsam iure? Iusto, praesentium similique deserunt nihil provident incidunt odio eligendi ex repudiandae impedit? Incidunt tempora fuga quos est velit dolorum, expedita sint corporis ipsum nostrum, praesentium aut blanditiis veniam odit sapiente atque aperiam vitae neque consectetur quas. Illum quo incidunt laborum veniam temporibus nulla fugit dolorum voluptate labore excepturi. Aperiam porro nostrum libero sequi sit eum, magnam unde possimus perferendis quasi accusantium suscipit quidem repudiandae illum, voluptatum fugiat eius, dignissimos nulla tenetur eaque? Reprehenderit voluptates temporibus minima quaerat officiis quae hic nostrum pariatur impedit, explicabo autem magnam fugit qui expedita ipsa facere.
+    </p>
+
+    <br><br>
+
+    <section>
+        <div class="box6"></div>
+    </section>
+
+    <br><br>
+
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div> -->
+
+
+    <button>
+        Menu
+
+        <ul>
+            <li>Web Dev</li>
+            <li>Java</li>
+            <li>Python</li>
+        </ul>
+        
+    </button>
+
+
+    
+</body>
+</html>

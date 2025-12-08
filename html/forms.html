@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms in HTML</h1>
+
+    <fieldset>
+
+      <legend>Fill this form</legend>
+
+      <form>
+        <label for="username">Username : </label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          required
+          placeholder="Enter your name"
+        />
+
+        <br /><br />
+
+        <label for="email">Email : </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Enter Your Password"
+        />
+
+        <br /><br />
+
+        <label for="password">Password : </label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter Your Password"
+          required
+        />
+
+        <br /><br />
+
+        <label for="gender">Gender : </label>
+
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gender" value="male" />
+
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender" value="female" />
+
+        <br /><br />
+
+        <label for="country">Country</label>
+
+        <select name="country" id="country">
+          <option value="" disabled selected>Select Country</option>
+          <option value="india">India</option>
+          <option value="china">China</option>
+          <option value="russia">Russia</option>
+        </select>
+
+        <br /><br />
+
+        <label for="hobbies">Hobbies : </label>
+
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="coding" value="coding" name="hobbies" />
+
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" id="gaming" value="gaming" name="hobbies" />
+
+        <label for="cricket">Cricket</label>
+        <input type="checkbox" id="cricket" value="cricket" name="hobbies" />
+
+        <br /><br />
+
+        <label for="resume">Resume : </label>
+        <input type="file" multiple />
+
+        <br /><br />
+
+        <label for="address">Address : </label>
+        <textarea name="address" id="address"></textarea>
+
+        <br /><br />
+
+        <label for="dob">DOB : </label>
+        <input type="date" />
+
+        <br /><br />
+
+        <label for="joiningWeek">Joining Week</label>
+        <input type="week" />
+
+        <br /><br />
+
+        <label for="loginTime">Login time : </label>
+        <input type="time" />
+
+        <br /><br />
+
+        <label for="favColor">Fav Color : </label>
+        <input type="color" />
+
+        <br /><br />
+
+        <label for="phoneno">Phone No : </label>
+        <input type="tel" maxlength="10" minlength="10" />
+
+        <br /><br />
+
+        <button>Submit</button>
+
+        <input type="submit" value="Login" />
+
+        <input type="reset" />
+      </form>
+
+    </fieldset>
+
+
+  </body>
+</html>

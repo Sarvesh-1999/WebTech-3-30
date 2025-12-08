@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        /* margin: 0;
+        padding: 0; */
+        box-sizing: border-box;
+      }
+      .box1 {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        padding: 50px;
+        border: 10px solid black;
+        margin-bottom: 100px;
+      }
+      .box2 {
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        padding: 100px;
+        border: 10px solid black;
+        margin-left: 100px;
+      }
+      .box3{
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        transition: 0.5s;
+      }
+      .btn1:hover+.box3{
+        margin-left: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">BOX 1</div>
+    <div class="box2">BOX 2</div>
+    <button class="btn1">hover me</button>
+    <div class="box3"></div>
+  </body>
+</html>

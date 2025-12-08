@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!--! HEADING TAGS -->
+    <h1 id="head1">heading</h1>
+    <h2>heading</h2>
+    <h3>heading</h3>
+    <h4>heading</h4>
+    <h5>heading</h5>
+    <h6>heading</h6>
+
+    <!-- ! PARAGRAPH TAG -->
+
+    <p>i am block element</p>
+    <p>
+      this <br />
+      is paragraph . Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Obcaecati exercitationem animi enim illum adipisci placeat molestias
+      soluta reprehenderit aliquam sint?
+    </p>
+
+    <hr />
+
+    <pre>
+        this
+        is
+        pre
+        tag. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda ipsa libero quis iusto voluptatem, iste sunt placeat magnam culpa earum?
+    </pre>
+
+    <hr />
+
+    <!-- ! TEXT FORMATTING TAGS -->
+    <strong>Strong</strong>
+    <em>Emphasis</em>
+    <mark>Mark</mark>
+    <ins>Underline</ins>
+    <del>Del</del>
+    <strike>strike</strike>
+    <!-- deprecated tag: Do not use -->
+    <strong>Cart <sup>0</sup> </strong>
+    <em> H<sub>2</sub>O </em>
+
+    <!-- ! BLOCK ELEMENTS -->
+    <p style="background-color: aqua; height: 100px">
+      Html is a markup language used to create structure of webpage
+    </p>
+
+    <!-- ! INLINE ELEMENT -->
+    <ins style="background-color: yellow; height: 100px">
+      I am Inline Element. i will not accept height and width
+    </ins>
+
+    <!-- ! INLINE-BLOCK -->
+    <img src="/images/doc2.png" style="height: 100px" alt="" />
+    <img src="/images/doc2.png" style="height: 100px" alt="" />
+
+    <!-- ! IMAGE TAG -->
+    <!-- 
+    path are of 2 types:-
+    1) relative path : if path is taken from the project directory eg. -> ./ or ../
+    2) absolute path : if path is taken from server eg. -> https://image.png
+     -->
+    <img src="../images/doc2.png" alt="doctor image" height="100" width="100" />
+    <img
+      src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png"
+      alt=""
+    />
+
+    <!-- ! VIDEO TAG -->
+    <video
+      controls
+      loop
+      height="300"
+      src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/f6ccf20dfe3f6a24ea9216bb8afaaa66740c715d.mp4"
+    ></video>
+    <video
+      autoplay
+      muted
+      loop
+      height="300"
+      src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/f6ccf20dfe3f6a24ea9216bb8afaaa66740c715d.mp4"
+    ></video>
+
+    <!-- ! AUDIO -->
+    <audio src="" controls></audio>
+
+    <!-- ! ANCHOR TAG -->
+    <h1>Anchor Tag : Hyper Links</h1>
+
+    <a href="https://www.flipkart.com" target="_self">flipkart</a>
+
+    <br />
+
+    <a href="https://www.flipkart.com" target="_blank">flipkart in new tab</a>
+
+    <br />
+
+    <a href="https://www.amazon.in" target="_main">amazon</a>
+
+    <br />
+
+    <a href="./index.html" target="_top">Go to top</a>
+
+    <br />
+
+    <a href="#head1">smooth scroll to top</a>
+
+    <br />
+
+    <!-- NESTED WEBPAGE -->
+    <iframe src="./New.html" frameborder="1" width="500" height="300"></iframe>
+
+    <!-- GOOGLE MAPS -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.7137137861623!2d77.31709921030318!3d28.578358286438718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4595fb7a80d%3A0xff1dc35f4e024e9!2sQSpiders%20Noida-Software%20Development%20Training%20%26%20Placement%20Institute!5e0!3m2!1sen!2sin!4v1760006110378!5m2!1sen!2sin"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <!-- YOUTUBE VIDEO -->
+    <iframe
+      width="681"
+      height="383"
+      src="https://www.youtube.com/embed/5Iikh-x2W8k"
+      title="Predator: Badlands | Final Trailer | Experience It In IMAX®"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <!-- div and span both are container -->
+    <div>block element</div>
+    <span>inline element</span>
+
+    <!-- ! SEMATIC TAGS : means which defines their meaning by their name-->
+    <header>header</header>
+    <details>
+      <summary>Read More</summary>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur,
+        consectetur.
+      </p>
+    </details>
+    <article>article</article>
+    <main>main</main>
+    <nav>nav</nav>
+    <section>section</section>
+    <table>
+      table
+    </table>
+    <aside>aside</aside>
+    <figure>figure</figure>
+    <figcaption>figcaption</figcaption>
+    <form>form</form>
+    <footer>footer</footer>
+
+    <!-- ! ORDERED LIST : type = "1/A/a/i/I" -->
+    <ol type="A" start="27">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+
+    <!-- ! UNORDERED LIST : type = "disc/square/circle" -->
+    <ul type="circle">
+      <li>REACT</li>
+      <li>NODE</li>
+      <li>EXPRESS</li>
+    </ul>
+
+    <!-- ! DEFINATION LIST -->
+    <dl>
+      <dt>Javascript</dt>
+      <dd>its a scripting language</dd>
+    </dl>
+
+
+
+    
+  </body>
+</html>

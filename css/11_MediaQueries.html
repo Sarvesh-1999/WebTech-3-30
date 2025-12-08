@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+        background-color: yellow;
+        font-size: 16px;
+      }
+      @media (min-width: 375px) {
+        h1 {
+          background-color: red;
+          color: white;
+        }
+      }
+      @media (min-width: 425px) {
+        h1 {
+          background-color: violet;
+          color: black;
+          font-size: 20px;
+        }
+      }
+      @media (min-width: 768px) {
+        h1 {
+          background-color: black;
+          color: white;
+          font-size: 25px;
+        }
+      }
+      @media (min-width: 1024px) {
+        h1 {
+          background-color: greenyellow;
+          color: black;
+          font-size: 30px;
+        }
+      }
+
+      header {
+        padding: 20px;
+        background-color: blueviolet;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav {
+        display: flex;
+        gap: 30px;
+      }
+      nav>a{
+        text-decoration: none;
+        color: white;
+      }
+      nav>button{
+        transform: rotate(90deg);
+        padding: 5px;
+        border-radius: 50%;
+        border: none;
+        display: none;
+      }
+      @media (max-width:425px) {
+        nav>button{
+            display: block;
+        }
+        .hideNav{
+            display: none;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Learn Media Queries</h1>
+
+    <header>
+      <div>Logo</div>
+      <nav>
+        <a href="" class="hideNav">Home</a>
+        <a href="" class="hideNav">About</a>
+        <a href="" class="hideNav">Careers</a>
+        <a href="" class="hideNav">Contacts</a>
+        <a href="" class="hideNav">Login</a>
+        <button>|||</button>
+      </nav>
+    </header>
+  </body>
+</html>

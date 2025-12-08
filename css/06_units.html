@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* px (pixels) are the fixed value */
+      .box1 {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        font-size: 40px;
+      }
+
+      /* vh/vw depends upon viewport height and width */
+      .box2{
+        height: 50vh;
+        width: 50vw;
+        background-color: violet;
+      }
+
+      /* 
+      % value depends upon parent element's unit, if parent's value changes
+      child's unit will also change
+      */
+      .box3{
+        height: 50%;
+        width: 50%;
+        background-color: red;
+      }
+
+      /* em value depends upon current element font size, by default 1em = 16px */
+      .box4{
+        height: 2em;
+        width: 5em;
+        font-size: 100px;
+        background-color: aqua;
+      }
+
+      /* rem value depends upon root element font size, by default 1rem = 16px */
+      html{
+        font-size: 50px;
+      }
+      .box5{
+        height: 1rem;
+        width: 1rem;
+        background-color: lightskyblue;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- <div class="box1">Lorem, ipsum.</div>
+    <div class="box2">
+        <div class="box3"></div>
+    </div>
+
+    <div class="box4">
+        lorem
+    </div> -->
+
+    <div class="box5"></div>
+
+  </body>
+</html>

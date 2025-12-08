@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: aqua;
+      }
+      a:visited {
+        color: chartreuse;
+      }
+      a:active {
+        color: orange;
+      }
+
+      button:hover {
+        background-color: royalblue;
+        color: white;
+      }
+      button:active {
+        background-color: red;
+      }
+      main > div:first-of-type {
+        background-color: blue;
+      }
+      main > div:last-of-type {
+        background-color: brown;
+      }
+      main > div:nth-of-type(2) {
+        background-color: blueviolet;
+      }
+
+      ol > li:first-child {
+        background-color: lightcoral;
+      }
+      ol > li:last-child {
+        background-color: lightgreen;
+      }
+      ol > li:nth-child(3) {
+        background-color: chocolate;
+      }
+      .box1 {
+        height: 300px;
+        width: 200px;
+        background-color: gray;
+        display: none;
+      }
+      #btn1:hover {
+        background-color: aqua;
+        color: black;
+      }
+      #btn1:hover + .box1 {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Pseudo Class Selectors :</h1>
+
+    <!-- <a href="https://flipkart.com">Flipkart</a>
+
+    <br>
+    <br>
+
+    <a href="./NewPage.html">New Page</a>
+
+    <br>
+    <br>
+
+    <button>click me</button>
+
+    <br>
+    <br>
+
+    <main>
+        <div>div 1</div>
+        <aside>aside 1</aside>
+        <div>div 2</div>
+        <section>section 1</section>
+        <aside>aside 2</aside>
+        <div>div 3</div>
+        <footer>footer 1</footer>
+    </main>
+
+-->
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>REACT</li>
+    </ol>
+
+    <br><br> 
+
+    <button id="btn1">hover me</button>
+
+    <div class="box1"></div>
+
+
+     
+  </body>
+</html>
