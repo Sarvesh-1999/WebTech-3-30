@@ -525,21 +525,90 @@ SYNTAX : function (){}
 // checkPallindrome("racecar");
 
 //! ARRAYS
+// let arr1 = [10, 20, 30, 40, 50];
+
+// console.log(arr1[0]);
+
+// // for loop
+// for (let i = 0; i < arr1.length; i++) {
+//   console.log(arr1[i]);
+// }
+
+// // for in
+// for (let i in arr1) {
+//   console.log(i);
+// }
+
+// // for of
+// for (let i of arr1) {
+//   console.log(i);
+// }
+
+//! ARRAY METHODS
 let arr1 = [10, 20, 30, 40, 50];
+console.log(arr1);
+console.log("Length is ", arr1.length); // 5 <--- property
 
-console.log(arr1[0]);
+//! pop() : Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
 
-// for loop
-for (let i = 0; i < arr1.length; i++) {
-  console.log(arr1[i]);
-}
+let poppedValue = arr1.pop();
+console.log(arr1); // [10,20,30,40]
+console.log("Popped Value is", poppedValue); // 50
 
-// for in
-for (let i in arr1) {
-  console.log(i);
-}
+//! push(newElements) : Appends new elements to the end of an array, and returns the new length of the array
 
-// for of
-for (let i of arr1) {
-  console.log(i);
-}
+let newLength = arr1.push(100, 200, 47, 80);
+console.log(arr1); // [10, 20, 30, 40, 100, 200, 47, 80]
+console.log("New Length is", newLength); // 8
+
+//! shift() : Removes the first element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+
+let returnVal = arr1.shift();
+console.log(arr1); // [ 20, 30, 40, 100, 200, 47, 80]
+console.log("First element is", returnVal); // 10
+
+//! unshift(newElements) :  Inserts new elements at the start of an array, and returns the new length of the array.
+
+let newLength2 = arr1.unshift("Hello", "JS", true, null, () => {});
+console.log(arr1); // ['Hello', 'JS', true, null, ƒ, 20, 30, 40, 100, 200, 47, 80]
+console.log("New Length is", newLength2);
+
+//! splice( startIndex , deleteCount , newElements ) : Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements array.
+
+let arr2 = [10, 20, 30, 40, 50];
+
+//! ONLY DELETE
+let deletedElements = arr2.splice(2, 1); // 30 removed
+console.log(arr2); // [10, 20, 40, 50]
+console.log("Deleted Elements",deletedElements); // [30]
+
+//! ONLY ADD
+arr2.splice(3,0,1200,1300)
+console.log(arr2); // [10, 20, 40, 1200, 1300, 50]
+
+//! ADD AND DELETE
+arr2.splice(1,3,"Hello World")
+console.log(arr2);// [10, 'Hello World', 1300, 50]
+
+
+//! slice(startIndex,endIndex) : Returns a copy of a section of an array.
+//Note :  it will not modify the original array
+
+let arr3 = [100,200,300,400,500]
+let newArr3 = arr3.slice(1,4)
+console.log(arr3);// [100,200,300,400,500]
+console.log(newArr3);// [200, 300, 400]
+
+//! sort()
+let arr4 = [4,5,1,3,6,2,9]
+let sortedArr1 = arr4.sort()
+console.log(sortedArr1); //[1, 2, 3, 4, 5, 6, 9]
+
+// lexographical sorting
+let arr5 = [90,6,10,2,70,3]
+let sortedArr2 = arr5.sort()
+console.log(sortedArr2); // [10, 2, 3, 6, 70, 90]
+
+let arr6 = [40,1,68,55,2,9,12]
+let sortedArr3 = arr6.sort((a,b)=> a-b) // Asc
+console.log(sortedArr3);// [1, 2, 9, 12, 40, 55, 68]
