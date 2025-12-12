@@ -545,70 +545,229 @@ SYNTAX : function (){}
 // }
 
 //! ARRAY METHODS
-let arr1 = [10, 20, 30, 40, 50];
-console.log(arr1);
-console.log("Length is ", arr1.length); // 5 <--- property
+// let arr1 = [10, 20, 30, 40, 50];
+// console.log(arr1);
+// console.log("Length is ", arr1.length); // 5 <--- property
 
-//! pop() : Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+// //! pop() : Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
 
-let poppedValue = arr1.pop();
-console.log(arr1); // [10,20,30,40]
-console.log("Popped Value is", poppedValue); // 50
+// let poppedValue = arr1.pop();
+// console.log(arr1); // [10,20,30,40]
+// console.log("Popped Value is", poppedValue); // 50
 
-//! push(newElements) : Appends new elements to the end of an array, and returns the new length of the array
+// //! push(newElements) : Appends new elements to the end of an array, and returns the new length of the array
 
-let newLength = arr1.push(100, 200, 47, 80);
-console.log(arr1); // [10, 20, 30, 40, 100, 200, 47, 80]
-console.log("New Length is", newLength); // 8
+// let newLength = arr1.push(100, 200, 47, 80);
+// console.log(arr1); // [10, 20, 30, 40, 100, 200, 47, 80]
+// console.log("New Length is", newLength); // 8
 
-//! shift() : Removes the first element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+// //! shift() : Removes the first element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
 
-let returnVal = arr1.shift();
-console.log(arr1); // [ 20, 30, 40, 100, 200, 47, 80]
-console.log("First element is", returnVal); // 10
+// let returnVal = arr1.shift();
+// console.log(arr1); // [ 20, 30, 40, 100, 200, 47, 80]
+// console.log("First element is", returnVal); // 10
 
-//! unshift(newElements) :  Inserts new elements at the start of an array, and returns the new length of the array.
+// //! unshift(newElements) :  Inserts new elements at the start of an array, and returns the new length of the array.
 
-let newLength2 = arr1.unshift("Hello", "JS", true, null, () => {});
-console.log(arr1); // ['Hello', 'JS', true, null, ƒ, 20, 30, 40, 100, 200, 47, 80]
-console.log("New Length is", newLength2);
+// let newLength2 = arr1.unshift("Hello", "JS", true, null, () => {});
+// console.log(arr1); // ['Hello', 'JS', true, null, ƒ, 20, 30, 40, 100, 200, 47, 80]
+// console.log("New Length is", newLength2);
 
-//! splice( startIndex , deleteCount , newElements ) : Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements array.
+// //! splice( startIndex , deleteCount , newElements ) : Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements array.
 
-let arr2 = [10, 20, 30, 40, 50];
+// let arr2 = [10, 20, 30, 40, 50];
 
-//! ONLY DELETE
-let deletedElements = arr2.splice(2, 1); // 30 removed
-console.log(arr2); // [10, 20, 40, 50]
-console.log("Deleted Elements",deletedElements); // [30]
+// //! ONLY DELETE
+// let deletedElements = arr2.splice(2, 1); // 30 removed
+// console.log(arr2); // [10, 20, 40, 50]
+// console.log("Deleted Elements",deletedElements); // [30]
 
-//! ONLY ADD
-arr2.splice(3,0,1200,1300)
-console.log(arr2); // [10, 20, 40, 1200, 1300, 50]
+// //! ONLY ADD
+// arr2.splice(3,0,1200,1300)
+// console.log(arr2); // [10, 20, 40, 1200, 1300, 50]
 
-//! ADD AND DELETE
-arr2.splice(1,3,"Hello World")
-console.log(arr2);// [10, 'Hello World', 1300, 50]
+// //! ADD AND DELETE
+// arr2.splice(1,3,"Hello World")
+// console.log(arr2);// [10, 'Hello World', 1300, 50]
+
+// //! slice(startIndex,endIndex) : Returns a copy of a section of an array.
+// //Note :  it will not modify the original array
+
+// let arr3 = [100,200,300,400,500]
+// let newArr3 = arr3.slice(1,4)
+// console.log(arr3);// [100,200,300,400,500]
+// console.log(newArr3);// [200, 300, 400]
+
+// //! sort()
+// let arr4 = [4,5,1,3,6,2,9]
+// let sortedArr1 = arr4.sort()
+// console.log(sortedArr1); //[1, 2, 3, 4, 5, 6, 9]
+
+// // lexographical sorting
+// let arr5 = [90,6,10,2,70,3]
+// let sortedArr2 = arr5.sort()
+// console.log(sortedArr2); // [10, 2, 3, 6, 70, 90]
+
+// let arr6 = [40,1,68,55,2,9,12]
+// let sortedArr3 = arr6.sort((a,b)=> a-b) // Asc
+// console.log(sortedArr3);// [1, 2, 9, 12, 40, 55, 68]
+
+//! ADVANCED ARRAY METHODS
+
+//! forEach(callback)
+// let arr1 = [10, 20, 30, 40, 50];
+
+// let val1 = arr1.forEach((ele, idx, array) => {
+//   console.log(ele, idx, array);
+//   return ele + 5
+// });
+// console.log(val1);// UD
+
+// //! map(callback)
+// let val2 = arr1.map((ele, idx, array) => {
+//   console.log(ele, idx, array);
+//   return ele + 5
+// });
+// console.log(val2);// new array [15, 25, 35, 45, 55]
+
+// //! filter(callback) : returns array of filtered elements
+// let val3 = arr1.filter((ele, idx, array) => {
+//   console.log(ele, idx, array);
+//   return ele > 15
+// });
+// console.log(val3);
+
+// //! find(callback) : returns single element
+// let arr2 = [100,90,10,20,30,10,50,60]
+// let val4 = arr2.find((ele) => ele === 10)
+// console.log(val4); // 10
+
+// //! findIndex(callback) : returns index of first element
+// let val5 = arr2.findIndex((ele) => ele === 10)
+// console.log(val5); // 2
+
+// //! reduce(callback , accumulatorValue)
+// let arr3 = [10,20,30,40,50]
+// let val6 = arr3.reduce((acc,ele,idx,array)=>{
+//    console.log(acc,ele);
+//    return acc + ele
+// },500)
+// console.log(val6);
+
+//! ARRAY DESTRUCTURING
+// let arr1 = [10, 20, 30];
+// let [a1, a2, a3] = arr1;
+// console.log(a3);
+
+// let arr2 = [100, 200, 300];
+// let [, , b1] = arr2;
+// console.log(b1);
+
+// let arr3 = [1000, [10, 20, ["HI"]], 90];
+// let [, [c1, , [c3]], c2] = arr3;
+// console.log(c1, c2, c3);
+
+// ! OBJECTS
+
+//! CREATE
+// let obj1 = {
+//   id: 1,
+//   fname: "John",
+//   isLoggedIn: true,
+//   havingLaptop: null,
+//   accountNo: 9876543234567887654567n,
+//   greet: function () {},
+// };
+// console.log(obj1);
+
+// //! READ :- WE HAVE 2 WAYS
+
+// // 1) USING DOT OPERATOR
+// console.log(obj1.fname);
+
+// // 2) USING SQUARE BRACKETS ---> objName["key"]
+// console.log(obj1["id"]);
+
+//! ONLY WAY TO ITERATE AN OBJECT BY USING FOR IN LOOP
+// for (let i in obj1) {
+//   console.log(obj1[i]);
+// }
+
+// //! UPDATE
+// obj1.havingLaptop = "HP"
+// console.log(obj1);
+
+// //! HOW TO ADD NEW PROPERTY
+// obj1.company = "HCL"
+// console.log(obj1);
+
+// //! DELETE
+// delete obj1.accountNo
+// console.log(obj1);
+
+//! OBJECT PROPERTIES
+// let obj2 = {
+//   id: 2,
+//   fname: "Jane",
+//   lname: "Doe",
+// };
+
+// // Object.keys()
+// let keys =  Object.keys(obj2)
+// console.log(keys); // ['id', 'fname', 'lname']
+
+// // Object.values()
+// let values = Object.values(obj2)
+// console.log(values);// [2, 'Jane', 'Doe']
+
+// // Object.entries()
+// let keysAndValues = Object.entries(obj2)
+// console.log(keysAndValues); // [Array(2), Array(2), Array(2)]
+
+// // Object.fromEntries()
+// let convertedObj2 = Object.fromEntries(keysAndValues)
+// console.log(convertedObj2); // {id: 2, fname: 'Jane', lname: 'Doe'}
+
+// ! "this" keyword
+// console.log(window);
+// console.log(this);
+
+// let phoneNo = 9876543210
+// let user1 = {
+//    fname : "Jane",
+//    lname : "Doe",
+//    phoneNo,
+//    getFullname : function () {
+//       console.log(this.fname , this.lname );
+//    },
+//    getEmail(){
+//       console.log(`${this.fname}.${this.lname}@gmail.com`);
+//    }
+// }
+// user1.getFullname()
+// user1.getEmail()
 
 
-//! slice(startIndex,endIndex) : Returns a copy of a section of an array.
-//Note :  it will not modify the original array
 
-let arr3 = [100,200,300,400,500]
-let newArr3 = arr3.slice(1,4)
-console.log(arr3);// [100,200,300,400,500]
-console.log(newArr3);// [200, 300, 400]
+//! CONSTRUCTOR FUNCTION
+class Student {
+   constructor(x, y) {
+      this.id = x;
+      this.name = y;
+   }
+   getStudentName(){
+      return `Student name is ${this.name}`
+   }
+}
 
-//! sort()
-let arr4 = [4,5,1,3,6,2,9]
-let sortedArr1 = arr4.sort()
-console.log(sortedArr1); //[1, 2, 3, 4, 5, 6, 9]
+let s1 = new Student(1 , "Clark")
+console.log(s1);
+console.log(s1.getStudentName());
 
-// lexographical sorting
-let arr5 = [90,6,10,2,70,3]
-let sortedArr2 = arr5.sort()
-console.log(sortedArr2); // [10, 2, 3, 6, 70, 90]
 
-let arr6 = [40,1,68,55,2,9,12]
-let sortedArr3 = arr6.sort((a,b)=> a-b) // Asc
-console.log(sortedArr3);// [1, 2, 9, 12, 40, 55, 68]
+function Employee(){
+   this.getEmail = function(){
+      
+   }
+}
+let e1 = new Employee()
