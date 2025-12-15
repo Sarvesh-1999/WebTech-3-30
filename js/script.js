@@ -747,27 +747,99 @@ SYNTAX : function (){}
 // user1.getFullname()
 // user1.getEmail()
 
-
-
 //! CONSTRUCTOR FUNCTION
-class Student {
-   constructor(x, y) {
-      this.id = x;
-      this.name = y;
-   }
-   getStudentName(){
-      return `Student name is ${this.name}`
-   }
+// class Student {
+//    constructor(x, y) {
+//       this.id = x;
+//       this.name = y;
+//    }
+//    getStudentName(){
+//       return `Student name is ${this.name}`
+//    }
+// }
+
+// let s1 = new Student(1 , "Clark")
+// console.log(s1);
+// console.log(s1.getStudentName());
+
+// function Employee(){
+//    this.getEmail = function(){
+
+//    }
+// }
+// let e1 = new Employee()
+
+// ! PROMISE
+// let p1 = new Promise((resolve, reject) => {
+//   if (10 > 2) {
+//     resolve("Hello World ⭐");
+//   } else {
+//     reject("Somthing went wrong ❌");
+//   }
+// });
+// console.log(p1);
+
+// p1.then((response)=>{
+//    document.writeln(`<h1>${response}</h1>`)
+// })
+
+// p1.catch((err)=>{
+//    document.writeln(`<h1>${err}</h1>`)
+// })
+
+// p1.finally(()=>{
+//    document.writeln("<p>API CALL DONE</p>")
+// })
+
+//! TODOS API CALL USING FETCH()
+// function getTodos() {
+//   const URL = "https://jsonplaceholder.typicode.com/todos";
+//   let p1 = fetch(URL);
+//   console.log(p1);
+
+//   p1.then((response) => {
+//     let p2 = response.json();
+//     console.log(p2);
+//     p2.then((data) => {
+//       console.log(data);
+//       displayTodo(data);
+//     });
+//   });
+
+//   p1.catch((err) => {
+//     console.log(err);
+//   });
+// }
+
+// getTodos();
+
+// function displayTodo(todos) {
+//   console.log(todos); // [{},{},{},......]
+
+//   todos.forEach((ele) => {
+//     document.writeln(`
+//       <div>
+//       <h1>${ele.title}  ${ele.completed ? `<span>🟢</span>` : `<span>❌</span>`} </h1>
+//       <button>Edit</button>
+//       <button>Delete</button>
+//       </div>
+
+//       `);
+//   });
+// }
+
+//! ASYNC AND AWAIT
+async function getPhotos() {
+  const URL = "https://jsonplaceholder.typicode.com/photos";
+  let response = await fetch(URL);
+  let data = await response.json();
+  console.log(data);
+  displayPhotos(data);
 }
+getPhotos();
 
-let s1 = new Student(1 , "Clark")
-console.log(s1);
-console.log(s1.getStudentName());
-
-
-function Employee(){
-   this.getEmail = function(){
-      
-   }
+function displayPhotos(allPhotos) {
+  allPhotos.forEach((ele) => {
+    document.writeln(`<h2>${ele.title}</h2>`);
+  });
 }
-let e1 = new Employee()
