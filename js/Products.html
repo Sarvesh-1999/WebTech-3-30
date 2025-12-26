@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #maincontainer {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+      }
+      .card {
+        border: 1px solid black;
+        max-width: 300px;
+        padding: 10px;
+      }
+      .card > img {
+        width: 100%;
+        min-height: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>All Products</h1>
+    <main id="maincontainer"></main>
+
+    <script src="./Products.js"></script>
+  </body>
+</html>

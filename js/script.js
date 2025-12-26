@@ -829,17 +829,69 @@ SYNTAX : function (){}
 // }
 
 //! ASYNC AND AWAIT
-async function getPhotos() {
-  const URL = "https://jsonplaceholder.typicode.com/photos";
-  let response = await fetch(URL);
-  let data = await response.json();
-  console.log(data);
-  displayPhotos(data);
-}
-getPhotos();
+// async function getPhotos() {
+//   const URL = "https://jsonplaceholder.typicode.com/photos";
+//   let response = await fetch(URL);
+//   let data = await response.json();
+//   console.log(data);
+//   displayPhotos(data);
+// }
+// getPhotos();
 
-function displayPhotos(allPhotos) {
-  allPhotos.forEach((ele) => {
-    document.writeln(`<h2>${ele.title}</h2>`);
-  });
-}
+// function displayPhotos(allPhotos) {
+//   allPhotos.forEach((ele) => {
+//     document.writeln(`<h2>${ele.title}</h2>`);
+//   });
+// }
+
+// ! WEB STORAGE
+// localStorage : a storage which is used to persist the data in the form of key and value. It has no expiration time
+
+//! to store data in local storage
+// localStorage.setItem("token","iuytr8765fghj56782hjnaskdu87812")
+// localStorage.setItem("user", "john doe")
+
+//! to get data from local storage
+// let data = localStorage.getItem("token")
+// console.log(data);
+
+//! to remove single key from storage
+// localStorage.removeItem("user")
+
+//! to clear local storage
+// localStorage.clear()
+
+// sessionStorage :  a storage which is used to store the data in the form of key and value temporary untill we close the tab
+
+// sessionStorage.setItem("name","Jane Doe")
+
+//! TIME INTERVALS
+
+// //! setInterval(()=>{}, intervalTime)
+// let count = 1;
+// let intervalId = setInterval(() => {
+//   console.log("Hiii", count);
+//   count++;
+// }, 2000);
+
+// //! setTimeout(()=>{}, timeout)
+
+// setTimeout(() => {
+//   console.log("Timeout", intervalId);
+//   clearInterval(intervalId);
+// }, 8000);
+
+//! EVENT LOOP
+// console.log("Start");
+
+// setTimeout(function timeout1() {
+//   console.log("Timeout 1");
+// }, 4000);
+
+// console.log("Hello World");
+
+// Promise.resolve("Success").then(function promiseFunc(res) {
+//   console.log(res);
+// });
+
+// console.log("End");
